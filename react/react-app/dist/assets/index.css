@@ -1,0 +1,32 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 1.5rem;
+}
+.app { max-width: 1000px; margin: 0 auto; }
+.app h1 { color: #14532d; margin-bottom: 1rem; }
+.app p { color: #64748b; margin-bottom: 1.5rem; }
+.card { background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; margin-bottom: 1.5rem; }
+.card h2 { margin-bottom: 1rem; color: #14532d; font-size: 1.2rem; }
+.form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.5rem; margin-bottom: 0.75rem; }
+.toolbar { display: grid; grid-template-columns: minmax(200px, 1fr) minmax(150px, 220px); gap: 0.5rem; margin-bottom: 1rem; }
+input, select, button { font: inherit; padding: 0.5rem 0.75rem; border-radius: 6px; border: 1px solid #e2e8f0; }
+button { background: #15803d; color: white; border: none; cursor: pointer; font-weight: 600; }
+button:hover { background: #14532d; }
+button.secondary { background: #64748b; }
+button.danger { background: #dc2626; }
+button.danger:hover { background: #b91c1c; }
+button.small { padding: 0.3rem 0.55rem; font-size: 0.85rem; }
+.button-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.table-wrap { overflow-x: auto; border: 1px solid #e2e8f0; border-radius: 8px; }
+table { width: 100%; min-width: 760px; border-collapse: collapse; background: white; }
+th, td { padding: 0.65rem 0.8rem; border-bottom: 1px solid #e2e8f0; text-align: left; font-size: 0.92rem; }
+th { background: #f1f5f9; font-weight: 700; }
+.actions { display: flex; gap: 0.3rem; flex-wrap: wrap; }
+.badge { display: inline-block; padding: 0.18rem 0.5rem; border-radius: 999px; background: #dcfce7; color: #14532d; font-size: 0.82rem; font-weight: 700; }
+@media (max-width: 720px) {
+  body { padding: 1rem; }
+  .toolbar { grid-template-columns: 1fr; }
+}
