@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Főoldal | Web programozás-1 Házi feladat</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header>
+  <h1>Web programozás-1 Előadás Házi feladat</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="react.html">React</a></li>
+      <li><a href="spa.html">SPA</a></li>
+      <li><a href="fetchapi.html">Fetch API</a></li>
+      <li><a href="axios.html">Axios</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Recepttár adatbázis</p>
+      <h2>Recepttár alkalmazás - 7 technológia, 1 adatbázis</h2>
+      <p>Ez a beadandó a receptes adathalmazt dolgozza fel: ételek, kategóriák, hozzávalók és mennyiségek jelennek meg egységes webes felületen.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>A projekt célja</h2>
+    <p>
+      A Webprogramozás 1 kurzus előadás beadandójához készült alkalmazás ugyanazt a CRUD logikát
+      több technológiai megközelítésben mutatja be. A téma a receptgyűjtemény, az alapadatokat az
+      <code>etel.txt</code>, <code>kategoria.txt</code>, <code>hozzavalo.txt</code> és <code>hasznalt.txt</code> fájlok adják.
+    </p>
+  </section>
+
+  <section class="section-block">
+    <h2>Menüpontok</h2>
+    <div class="feature-grid">
+      <div class="feature"><span class="pts">2 pont</span><h3>JavaScript</h3><p>CRUD tiszta JavaScripttel, memóriában tárolt recept tömbbel.</p></div>
+      <div class="feature"><span class="pts">2 pont</span><h3>React</h3><p>Ugyanez React komponensekkel és <code>useState</code> állapotkezeléssel.</p></div>
+      <div class="feature"><span class="pts">3 pont</span><h3>SPA</h3><p>Két receptes mini-alkalmazás: adag kalkulátor és konyhai memóriajáték.</p></div>
+      <div class="feature"><span class="pts">4 pont</span><h3>Fetch API</h3><p>Vanilla JavaScript + Fetch API, PHP és MySQL szerveroldali háttérrel.</p></div>
+      <div class="feature"><span class="pts">4 pont</span><h3>Axios</h3><p>React + Axios kliens ugyanarra a PHP CRUD API-ra építve.</p></div>
+      <div class="feature"><span class="pts">3 pont</span><h3>OOJS</h3><p>Objektumorientált grafikus JavaScript alkalmazás Canvas felületen.</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Adatbázis tartalma</h2>
+    <div class="stats-grid">
+      <div class="stat"><strong>116</strong><span>recept az <code>etel.txt</code> fájlból</span></div>
+      <div class="stat"><strong>6</strong><span>ételkategória</span></div>
+      <div class="stat"><strong>231</strong><span>hozzávaló</span></div>
+      <div class="stat"><strong>1108</strong><span>recept-hozzávaló kapcsolat</span></div>
+    </div>
+    <p>A CRUD oldalak az ételek nevét, kategóriáját, felírási dátumát és első elkészítési dátumát kezelik.</p>
+  </section>
+
+  <section class="card">
+    <h2>Tech stack</h2>
+    <p>
+      <strong>Front-end:</strong> HTML5, CSS3, JavaScript, React.
+      <strong>Back-end:</strong> PHP 8 + PDO, MySQL/MariaDB.
+      <strong>HTTP:</strong> Fetch API és Axios.
+      <strong>Deploy:</strong> Nethely.hu kompatibilis fájlszerkezet.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>Készítette: <strong>Molnár Ádám</strong> (Neptun: <strong>MFG82Z</strong>) - Webprogramozás 1 Előadás Beadandó</p>
+  <p>GitHub: <span style="color:#bbf7d0">beadás előtt kitöltendő</span></p>
+</footer>
+
+<script src="js/common.js"></script>
+</body>
+</html>

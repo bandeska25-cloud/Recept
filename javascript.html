@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript CRUD | Web programozás-1</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header>
+  <h1>Web programozás-1 Előadás Házi feladat</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="react.html">React</a></li>
+      <li><a href="spa.html">SPA</a></li>
+      <li><a href="fetchapi.html">Fetch API</a></li>
+      <li><a href="axios.html">Axios</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>JavaScript CRUD - Receptek</h2>
+  <p>Tiszta vanilla JavaScript alkalmazás. Az adatok egy kliens oldali tömbben élnek, az oldal újratöltése után az eredeti seed adatok állnak vissza.</p>
+
+  <section class="card">
+    <h3 id="form-title">Új recept hozzáadása</h3>
+    <form id="recipe-form">
+      <input type="hidden" id="recipe-id">
+      <div class="form-grid">
+        <input type="text" id="nev" placeholder="Étel neve" required>
+        <select id="kategoriaid" required></select>
+        <input type="date" id="felirdatum" required>
+        <input type="date" id="elsodatum" aria-label="Első elkészítés dátuma">
+      </div>
+      <div class="button-row">
+        <button type="submit" id="save-btn">Hozzáadás</button>
+        <button type="button" class="secondary" id="cancel-btn" style="display:none">Mégse</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="card">
+    <h3>Receptek listája</h3>
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="Keresés receptnév szerint">
+      <select id="filter-category"></select>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>ID</th><th>Név</th><th>Kategória</th><th>Felírás dátuma</th><th>Első elkészítés</th><th>Műveletek</th></tr>
+        </thead>
+        <tbody id="recipe-list"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Készítette: <strong>Molnár Ádám</strong> (Neptun: <strong>MFG82Z</strong>)</p>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/data.js"></script>
+<script src="js/javascript-crud.js"></script>
+</body>
+</html>

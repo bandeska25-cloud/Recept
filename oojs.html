@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOJS | Web programozás-1</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header>
+  <h1>Web programozás-1 Előadás Házi feladat</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+      <li><a href="react.html">React</a></li>
+      <li><a href="spa.html">SPA</a></li>
+      <li><a href="fetchapi.html">Fetch API</a></li>
+      <li><a href="axios.html">Axios</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Objektumorientált JavaScript</h2>
+  <p>
+    A recept témájú grafikus alkalmazás hozzávalókat és fűszereket animál Canvas felületen,
+    osztályokra bontott objektumorientált kóddal.
+  </p>
+
+  <section class="card">
+    <div class="button-row" style="margin-bottom:1rem;">
+      <button id="add-ingredient">+ Hozzávaló</button>
+      <button class="accent" id="add-spice">+ Fűszer</button>
+      <button class="danger" id="clear">Törlés</button>
+    </div>
+    <canvas id="oojs-canvas" width="900" height="480"></canvas>
+    <p style="text-align:center;color:var(--muted);font-size:0.9rem;">Objektumok száma: <span id="count">0</span></p>
+  </section>
+
+  <section class="card">
+    <h3>Használt OOJS elemek</h3>
+    <ul class="requirements-list">
+      <li><code>class KitchenObject</code> alaposztály constructorral és metódusokkal</li>
+      <li><code>class IngredientBubble extends KitchenObject</code> öröklődés <code>super()</code> hívással</li>
+      <li><code>class SpiceStar extends IngredientBubble</code> további specializáció</li>
+      <li><code>document.body.appendChild</code> DOM elem beszúrására</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Készítette: <strong>Molnár Ádám</strong> (Neptun: <strong>MFG82Z</strong>)</p>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/oojs-app.js"></script>
+</body>
+</html>
